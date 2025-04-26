@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FlexBox</title>
+    <style>
+      .container {
+        border: 3px solid brown;
+        display: flex;
+        height: 20vh;
+        justify-content: center;
+        align-items: center;
+      }
+      .item {
+        height: 62px;
+        width: 62px;
+        background-color: blueviolet;
+        border: 2px solid black;
+      }
+      .container1 {
+        margin-top: 10px;
+        border: 3px solid brown;
+        display: flex;
+        height: 20vh;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .container2 {
+        margin-top: 10px;
+        border: 3px solid brown;
+        display: flex;
+        height: 20vh;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .container3 {
+        margin-top: 10px;
+        border: 3px solid brown;
+        display: flex;
+        height: 20vh;
+        justify-content: center;
+        align-items: flex-start;
+      }
+
+      .container4 {
+        margin-top: 10px;
+        border: 3px solid brown;
+        display: flex;
+        height: 20vh;
+        justify-content: center;
+        align-items: flex-end;
+      }
+
+      .container5 {
+        margin-top: 10px;
+        border: 3px solid brown;
+        display: flex;
+        height: 20vh;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      .container6 {
+        margin-top: 10px;
+        border: 3px solid brown;
+        display: flex;
+        height: 20vh;
+        justify-content: flex-end;
+        align-items: center;
+      }
+
+      .container7 {
+        margin-top: 10px;
+        border: 3px solid brown;
+        display: flex;
+        flex-direction: column;
+        height: 20vh;
+        justify-content: center;
+        align-items: center;
+      }
+      .container8{
+        margin-top: 10px;
+        border: 3px solid brown;
+        display: flex;
+        flex-direction: row-reverse;
+        /* flex-direction: row;  //by-deafult flex-direction is always in row.  */
+        justify-content: center;
+        align-items: center;
+        height: 20vh;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- display flex and with (justify-content: center;) justify-content center for makes the block inside the container horizontally center(parallel to bottom/ground)
+        (align-items: center;) align-items with center will make the blocks inside the container vertically center (parallel to column)
+        -->
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+    <div class="container1">
+      <!-- display flex with justify-content: space-around will add space around the block inside container and space around the blocks with equal value. -->
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+    <div class="container2">
+      <!-- display flex with justify-content: space-between will add space between the block inside container and the blocks on both side will not have any space and connected to the container. -->
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+    <div class="container3">
+      <!-- display flex with justify-content:center and align-items: flex-star will make the blocks inside the container appear at the center of the container align-items will make the blocks appear like no padding-top added to all the items, sticking to the containter border(vertically). -->
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+    <div class="container4">
+      <!-- display flex with justify-content:center and align-items: flex-star will make the blocks inside the container appear at the center of the container align-items will make the blocks appear like no padding-bottom added to all the items, sticking to the containter border(vertically). -->
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+    <div class="container5">
+      <!-- display flex with justify-content: flex-start and align-items: center will make the make the blocks appear at the left of the container like no padding-left added and the blocks will appear vertically in center with equal space from top and bottom from container borders. -->
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+    <div class="container6">
+      <!-- display flex with justify-content: flex-end and align-items: center will make the make the blocks appear at the right of the container like no padding-right added and the blocks will appear vertically in center with equal space from top and bottom from container borders. -->
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+    <div class="container7">
+      <!-- with display flex and flex-direction: column will make the blocks inside the container appear as from top to bottom instead to left to right and flex-directin: column-reverse will make the blocks appear as from bottom to top i.e column in descending order-->
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+      <div class="item">5</div>
+      <div class="item">6</div>
+    </div>
+    <div class="container8">
+        <!-- with display flex and flex-direction: row will make the blocks inside the container appear as from left to right instead of top to bottom and flex-direction: row-reverse will make the blocks appear as from right to left i.e row with reverse form like Urdu language. -->
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+      </div>
+  </body>
+</html>
